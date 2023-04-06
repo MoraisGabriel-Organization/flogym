@@ -30,3 +30,10 @@ Api de uma aplicação no estilo da GymPass
 - [ ] Os dados da aplicação precisam estar persistidos em um banco de dados PostgreSQL
 - [ ] Todas lista de dados precisam estar paginados com 20 itens por paginas
 - [ ] O usuário deve ser identificado por um jwt(Json Web Token)
+
+# Tecnologias
+
+- Node.js
+- Fastify
+- Typescript
+- Zod
