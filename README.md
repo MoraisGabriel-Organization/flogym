@@ -1,6 +1,6 @@
-# App GimCheck
+# App Flogym
 
-Api de uma aplicação no estilo da GymPass
+Api de uma aplicação de realização de check-ins em academias
 
 ## RFs - Requisitos Funcionais
 
