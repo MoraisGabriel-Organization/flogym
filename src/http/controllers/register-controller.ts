@@ -1,4 +1,5 @@
 import { prisma } from "@/lib/prisma";
+import { hash } from "bcryptjs";
 import { FastifyReply, FastifyRequest } from "fastify";
 import { z } from "zod";
 
@@ -10,12 +11,26 @@ export async function registerController(request: FastifyRequest, reply: Fastify
   });
   
   const {name, email, password} = registerBodySchema.parse(request.body);
+  
+  const userWithSameEmail = await prisma.user.findUnique({
+    where: {
+      email
+    }
+  });
+
+  if(userWithSameEmail){
+    return reply.status(409).send({msgError: "User already exists"})
+  }
+  
+  const password_hash = await hash(password, 6)//6 == a number of rounds
+
+
 
   await prisma.user.create({
     data: {
       name, 
       email,
-      password_hash: password
+      password_hash
     }
   });
 
