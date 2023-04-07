@@ -14,8 +14,7 @@
         "sourceType": "module"
     },
     "plugins": [
-        "@typescript-eslint",
-        "prettier"
+        "@typescript-eslint"
     ],
     "rules": {
         "indent": [
@@ -34,9 +33,7 @@
             "error",
             "always"
         ],
-        "newline-before-return": [
-            "error",
-            "always"
-        ],
+        "newline-before-return":"error",
+        "camelcase":"off"
     }
 }
