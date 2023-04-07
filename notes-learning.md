@@ -19,4 +19,17 @@
   docker stop nome-do-container
 
 ```
-- 
+## Arquivo Docker Compose 
+
+- Basicamente se trata de um arquivo que dita todos os container que a aplicação precisa criar para que a aplicação funcione
+
+- Dessa forma qualquer pessoa que acessar for trabalhar ou executar a aplicação, vai conseguir executar de forma rápida e prática
+
+- Então para definirmos essa configuração criamos um arquivo do chamada `docker-compose.yml`.
+Em seguida vamos traduzir o comando  que realizamos para criar o docker, para essa estrutura do `.ylm` do arquivo do docker compose.
+
+- Após termos o arquivo com o comando em `.ylm`, executamos o seguinte comando: 
+
+```bash
+  docker compose up -d
+```
