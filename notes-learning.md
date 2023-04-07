@@ -33,3 +33,13 @@ Em seguida vamos traduzir o comando  que realizamos para criar o docker, para es
 ```bash
   docker compose up -d
 ```
+
+
+# Relacionamentos Banco de dados
+
+- Relacionamento 1-1 => Um dado vai se relacionar com um dado em outra tabela
+  - Provavelmente esse dado poderia estar na mesma tabela(deixado mais semântico) 
+
+- Relacionamento 1-N => um dado pode estar relacionado com vários registros em outras tablas
+
+- Relacionamento N-N => Um dado que pode estar relacionado com vários registros em "outra tabela", e - essa "outra tabela" pode estar vinculado com vários registros dessa primeira tabela

@@ -8,7 +8,8 @@
     "build": "tsup src --out-dir build",
     "docker:start": "docker compose up -d",
     "docker:stop": "docker compose stop",
-    "docker:delete": "docker compose down"
+    "docker:delete": "docker compose down",
+    "migrate:dev": "npx prisma migrate dev"
   },
   "author": "Gabriel Morais",
   "license": "ISC",
