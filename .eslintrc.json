@@ -7,15 +7,15 @@
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended"
     ],
-    "overrides": [
-    ],
+    "overrides": [],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
     "plugins": [
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "prettier"
     ],
     "rules": {
         "indent": [
@@ -35,8 +35,8 @@
             "always"
         ],
         "newline-before-return": [
-          "error",
-          "always"
+            "error",
+            "always"
         ],
     }
 }
