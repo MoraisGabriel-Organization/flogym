@@ -27,7 +27,7 @@ export async function registerController(
       return reply.status(409).send({message: error.message});
     }
     
-    return reply.status(500).send(); //TODO: Fix me, for new strategy
+    throw error;
   }
 
   return reply.status(201).send();
