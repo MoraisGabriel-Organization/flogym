@@ -43,3 +43,14 @@ Em seguida vamos traduzir o comando  que realizamos para criar o docker, para es
 - Relacionamento 1-N => um dado pode estar relacionado com vários registros em outras tablas
 
 - Relacionamento N-N => Um dado que pode estar relacionado com vários registros em "outra tabela", e - essa "outra tabela" pode estar vinculado com vários registros dessa primeira tabela
+
+# Implementação de testes
+
+- Para implementar os testes, basta instalar o Vitest com o comando a seguir:
+
+```bash
+  npm i -D vitest vite-tsconfig-paths
+```
+
+- Observe que também estaremos instalando outra dependência. Pois com ela iremos conseguir inserir uma configuração para conseguirmos utilizar o alias dos paths que configuramos lá dentro do `tsconfig.json`.
+
