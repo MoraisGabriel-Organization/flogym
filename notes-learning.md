@@ -54,3 +54,18 @@ Em seguida vamos traduzir o comando  que realizamos para criar o docker, para es
 
 - Observe que também estaremos instalando outra dependência. Pois com ela iremos conseguir inserir uma configuração para conseguirmos utilizar o alias dos paths que configuramos lá dentro do `tsconfig.json`.
 
+## Vitest UI - Acompanhando testes fora da linha de comando
+
+- Para conhecer acesso o [VitestUI](https://vitest.dev/guide/ui.html)
+
+### Instalação
+
+```bash
+  npm i -D @vitest/ui
+```
+
+- Adicione o script a seguir no `package.json`:
+
+```json
+  "test:ui":"vitest --ui"
+```
