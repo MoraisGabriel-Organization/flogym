@@ -12,7 +12,8 @@
     "docker:delete": "docker compose down",
     "migrate:dev": "npx prisma migrate dev",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
   },
   "author": "Gabriel Morais",
   "license": "ISC",
@@ -20,6 +21,7 @@
     "@types/node": "^18.15.11",
     "@typescript-eslint/eslint-plugin": "5.57.1",
     "@typescript-eslint/parser": "5.57.1",
+    "@vitest/coverage-c8": "0.30.0",
     "eslint": "8.37.0",
     "prisma": "4.12.0",
     "tsup": "^6.7.0",

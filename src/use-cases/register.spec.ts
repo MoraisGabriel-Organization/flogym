@@ -52,8 +52,8 @@ describe('Register User', () => {
     });
 
     
-
-    expect( () => 
+    //Toda vez que eu tiver uma promise dentro do expect deve ser utilizado o "await"
+    await expect( () => 
       registerUseCase.execute({
         name: 'John Doe',
         email,
