@@ -4,7 +4,7 @@ Api de uma aplicação de realização de check-ins em academias
 
 ## RFs - Requisitos Funcionais
 
-- [ ] Deve ser possível se cadastrar
+- [x] Deve ser possível se cadastrar
 - [ ] Deve ser possível se autenticar
 - [ ] Deve ser possível obter o perfil de um usuário logado
 - [ ] Deve ser possível obter o número de check-ins realizado pelo usuário logado
@@ -17,7 +17,7 @@ Api de uma aplicação de realização de check-ins em academias
 
 ## RNs - Regras de Negócios
 
-- [ ] O usuário não deve poder se cadastrar com um e-mail duplicado
+- [x] O usuário não deve poder se cadastrar com um e-mail duplicado
 - [ ] Usuário não pode fazer dois check-ins no mesmo dia
 - [ ] O usuário não pode fazer check-in se não estiver perto(100m) da academia
 - [ ] O check-in só pode ser validado até 20min após ser criado
@@ -26,8 +26,8 @@ Api de uma aplicação de realização de check-ins em academias
 
 ## RNFs - Requisitos não Funcionais
 
-- [ ] A senha do usuário deve estar criptografados
-- [ ] Os dados da aplicação precisam estar persistidos em um banco de dados PostgreSQL
+- [x] A senha do usuário deve estar criptografados
+- [x] Os dados da aplicação precisam estar persistidos em um banco de dados PostgreSQL
 - [ ] Todas lista de dados precisam estar paginados com 20 itens por paginas
 - [ ] O usuário deve ser identificado por um jwt(Json Web Token)
 
